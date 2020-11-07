@@ -1,0 +1,13 @@
+{
+  "name": "ImageProps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron src/index.js"
+  },
+  "dependencies": {
+    "electron": "^8.2.5",
+    "image-size": "^0.8.3"
+  }
+}
