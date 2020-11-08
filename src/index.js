@@ -1,4 +1,9 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
+
+require("electron-reload")(__dirname, {
+  electron: require(`${__dirname}/../node_modules/electron`),
+});
+
 const sizeOf = require("image-size");
 
 let mainWindow;

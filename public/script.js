@@ -12,5 +12,5 @@ ipcRenderer.on("dimensoesImage", (event, dimensions) => {
   const { height, width } = dimensions;
   document.querySelector(
     "#result"
-  ).innerHTML = `Largura=${width} Altura=${height}`;
+  ).innerHTML = `Largura=${width}px Altura=${height}px`;
 });
