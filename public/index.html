@@ -1,22 +1,36 @@
 <head>
   <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <div class="container">
     <div class="title">
-      <h1>Propriedades de Imagens</h1>
+      <h1>Propriedades da Imagem</h1>
     </div>
 
     <form>
       <div>
-        <input type="file" accept="image/*" />
+        <input type="file" accept="image/*" required />
       </div>
-      <button id="enviar" type="submit">Mostrar Dimensões</button>
+      <button id="enviar" type="submit" onclick="ResultDisplay()">
+        Mostrar Dimensões
+      </button>
     </form>
-    <div class="result">
-      <img src="images/largura.svg" alt="Width" />
-      <img src="images/altura.svg" alt="Height" />
-      <h1 id="result"></h1>
+
+    <div id="result">
+      <div class="Width">
+        <img src="images/largura.svg" alt="Width" />
+        <span>(largura)</span>
+        <h1 id="result-W"></h1>
+      </div>
+      <div class="Height">
+        <img src="images/altura.svg" alt="Height" />
+        <span>(altura)</span>
+        <h1 id="result-H"></h1>
+      </div>
     </div>
   </div>
 

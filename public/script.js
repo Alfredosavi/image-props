@@ -10,7 +10,10 @@ document.querySelector("form").addEventListener("submit", (e) => {
 
 ipcRenderer.on("dimensoesImage", (event, dimensions) => {
   const { height, width } = dimensions;
-  document.querySelector(
-    "#result"
-  ).innerHTML = `Largura=${width}px Altura=${height}px`;
+  document.querySelector("#result-W").innerHTML = `${width}px`;
+  document.querySelector("#result-H").innerHTML = `${height}px`;
 });
+
+function ResultDisplay() {
+  document.getElementById("result").style.display = "flex";
+}
