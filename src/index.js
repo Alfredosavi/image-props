@@ -16,8 +16,10 @@ app.on("ready", () => {
     width: 550,
     height: 400,
     resizable: false,
+    icon: __dirname + "/Icon/icon.png",
   });
   mainWindow.loadURL(`file://${__dirname}/../public/index.html`);
+  mainWindow.removeMenu();
 });
 
 ipcMain.on("dimensoes", (event, path) => {
