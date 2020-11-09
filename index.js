@@ -1,8 +1,11 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
+var isDev = process.env.APP_DEV ? process.env.APP_DEV.trim() == "true" : false;
 
-require("electron-reload")(__dirname, {
-  electron: require(`${__dirname}/../node_modules/electron`),
-});
+if (isDev) {
+  require("electron-reload")(__dirname, {
+    electron: require(`${__dirname}/node_modules/electron`),
+  });
+}
 
 const sizeOf = require("image-size");
 
@@ -18,7 +21,7 @@ app.on("ready", () => {
     resizable: false,
     icon: __dirname + "/Icon/icon.png",
   });
-  mainWindow.loadURL(`file://${__dirname}/../public/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/public/index.html`);
   mainWindow.removeMenu();
 });
 
