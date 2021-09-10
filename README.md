@@ -3,24 +3,23 @@ A application that returns the dimensions of the image in pixels. It's created w
 
 ![](https://media.giphy.com/media/hGRRk9kZF4IKwjl5OX/giphy.gif)
 
-## Getting Started
 
-1. Clone & Install Dependencies
-- 1.1) `git clone https://github.com/Alfredosavi/image-props`
-- 1.2) `cd image-props`
-- 1.3) Install NPM packages with `yarn install`
- 
-2. Start your app
+## 🔥 Instalação e execução
+  1. Faça um clone desse repositório: ```git clone https://github.com/Alfredosavi/image-props```;
+  2. Entre dentro do diretório: ```cd image-props/```;
+  3. Instale as dependências com: ```yarn install```;
+  4. Rode com ```yarn start```.
+    
 
-- 2.1) run `yarn start`.
+## ⚡️ Como contribuir
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
 
-## Build
+Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
-1. Run to generate the app build
-```console
-$ yarn dist
-```
 
-## License
+## :memo: Licença
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
